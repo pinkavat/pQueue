@@ -26,8 +26,9 @@ void freeQueue(pQueue *queue)
 ``` 
 
 ### Queue operations
-+The pQueue deals in void pointers; managing the objects referred to by these pointers is not the pQueue's responsibility.
-+The pQueue is a min-queue: elements with lower priority will be returned first.
+
+-The pQueue deals in void pointers; managing the objects referred to by these pointers is not the pQueue's responsibility.
+-The pQueue is a min-queue: elements with lower priority will be returned first.
 
 Add new elements with
 ```
