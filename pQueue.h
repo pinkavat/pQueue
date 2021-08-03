@@ -6,13 +6,14 @@
 /* pQueue.h
  *
  * A rudimentary attempt to stay awake by coding a
- * Binary-MinHeap backed Priority Queue; October 2019
- * Refactored in November with AoS format
- * Refactored into header-only in March 2020
+ * Binary-MinHeap backed Priority Queue
  *
  * Supports peek, pop, and push, with intuitive behaviour.
  * Argument format: queue, [newElement], [priority]    (optional args if pushing)
  * Heap-resident, allocation with newQueue(backing size), deallocation with freeQueue(queue)
+ *
+ * Peeking and Popping return a pointer to the head element; pushing takes a pointer to the new head element.
+ * Interpreting these pointers and allocating space for the objects thereto pointed is the responsibility of the invoking context.
  *
  * written October 2019 by Thomas Pinkava; refactored into AoS format November 2019; made header-only in March 2020.
 */
